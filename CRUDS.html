@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="./css/CRUDS.css">
+</head>
+<body>
+    <div class="container">
+        <!-- head -->
+        <div class="head">
+            <h1>c<sub>reate</sub> r<sub>ead</sub> u<sub>pdate</sub> d<sub>elete</sub> s<sub>earch</sub></h1>
+            <p>product managment system</p>
+        </div>
+        <!-- input -->
+        <div class="input">
+            <form action="">
+                <input type="text" placeholder="title" id="title" >
+                <div class="price">
+                    <input oninput="getTotal()"  type="number" placeholder="price" id="price" >
+                    <input oninput="getTotal()"  type="number" placeholder="taxes" id="taxes" >
+                    <input oninput="getTotal()"  type="number" placeholder="ads" id="ads" >
+                    <input oninput="getTotal()"  type="number" placeholder="discount" id="discount" >
+                    <small id="total"></small>
+                </div>
+                <input type="number" placeholder="count" id="count" >
+                <input type="text" placeholder="category" id="category" >
+                <div id="error">Empty inputs cannot be created</div>
+                <button id="create">Create</button>
+            </form>
+        </div>
+        <!-- output -->
+        <div class="output">
+            <div class="search">
+                <input oninput="searchBy(this.value)" type="text"  id="search" placeholder="search">
+                <div class="searchBtn">
+                    <button onclick="searchProduct(this.id)" id="searchByTitle">Search By Title</button>
+                    <button onclick="searchProduct(this.id)" id="searchByCategory">Search By Category</button>
+                </div>
+            </div>
+            <hr>
+            <div id="deleteAll">
+                
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>title</th>
+                        <th>price</th>
+                        <th>taxes</th>
+                        <th>ads</th>
+                        <th>discount</th>
+                        <th>total</th>
+                        <th>category</th>
+                        <th>update</th>
+                        <th>delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./js/CRUDS.js"></script>
+</body>
+</html>
