@@ -66,14 +66,14 @@ Through this project I practiced:
 
 ## 🌐 Live Demo
 
-![CRUDS Project](https://tariqkhalaf.github.io/CRUDS/)
+[CRUDS Project](https://tariqkhalaf.github.io/CRUDS/)
 
 ---
 
 ## 👨‍💻 Author
 
 **Tarek Khalaf**
-![GitHub](https://github.com/TariqKhalaf)
+[GitHub](https://github.com/TariqKhalaf)
 
 ---
 
